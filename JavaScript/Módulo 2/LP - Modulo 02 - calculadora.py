@@ -19,7 +19,7 @@ while True:
         print("\nEssa opção não existe, tente novamente!")
         
     elif(1 <= opcao <= 4):
-        num1 = int(input("Insira o 1° número: "))
-        num2 = int(input("Insira o 2° número: "))
+        num1 = float(input("Insira o 1° número: "))
+        num2 = float(input("Insira o 2° número: "))
         operacao = calculadora(opcao, num1, num2)
         print(f"Resultado = {operacao}")
