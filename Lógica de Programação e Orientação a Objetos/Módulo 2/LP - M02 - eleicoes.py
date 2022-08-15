@@ -34,7 +34,7 @@ while True:
             while opcao != 1 and opcao != 2:
                 opcao = int(input('\nDeseja finalizar as eleições? \n1 - SIM\n2 - NÃO \n'))
 
-    except Exception as erro2:
+    except Exception as erro:
         print('\n\033[0;31mOpção inválida. Tente novamente!\n\033[m')
 
 maior = 0
@@ -56,7 +56,7 @@ elif(maior == quantVotos_Y == quantVotos_Z):
 elif(maior == quantVotos_X == quantVotos_Z):
     print(f'A votação deu empate entre Candidato_X e Candidato_Z')
 elif(maior == quantVotos_X == quantVotos_Y):
-    print(f'A votação deu empate entre Candidato_Y e Candidato_Y')
+    print(f'A votação deu empate entre Candidato_X e Candidato_Y')
 else:
     print(f'O candidato vencedor foi o {vencedor} com {maior} votos. ')
 
