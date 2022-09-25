@@ -3,13 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Desenvolvimento 05 - JS</title>
+        <title>Desenvolvimento 05 - JSM02</title>
     </head>
     <body>
         <h2>Calculadora de Operações Básicas</h2>
-
         <script>
-            let n1, n2, operacao, resultado;
+            var n1, n2, operacao, resultado;
             operacao = parseInt(prompt("1- SOMA\n2- SUBTRAÇÃO\n3- MULTIPLICAÇÃO\n4- DIVISÃO\nQual operacao deseja efetuar?"));
             n1 = parseFloat(prompt("Digite o 1° valor:"));
             n2 = parseFloat(prompt("Digite o 2° valor:"));
@@ -32,7 +31,7 @@
                         resultado = n1 / n2;
                         document.write(n1+" / "+n2+" = "+resultado);
                         if (n1 % n2 != 0){
-                            let resto = n1 % n2;
+                            var resto = n1 % n2;
                             document.write("<br/>O resto entre "+n1+" e "+n2+" = "+resto)
                         }
                     }
@@ -45,6 +44,5 @@
                     break;
             }
         </script>
-
     </body>
 </html>
