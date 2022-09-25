@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Desenvolvimento 05 - JS</title>
+    </head>
+    <body>
+        <h2>Calculadora de Operações Básicas</h2>
+
+        <script>
+            let n1, n2, operacao, resultado;
+            operacao = parseInt(prompt("1- SOMA\n2- SUBTRAÇÃO\n3- MULTIPLICAÇÃO\n4- DIVISÃO\nQual operacao deseja efetuar?"));
+            n1 = parseFloat(prompt("Digite o 1° valor:"));
+            n2 = parseFloat(prompt("Digite o 2° valor:"));
+
+            switch(operacao){
+                case 1:
+                    resultado = n1 + n2;
+                    document.write(n1+" + "+n2+" = "+resultado);
+                    break;
+                case 2:
+                    resultado = n1 - n2;
+                    document.write(n1+" - "+n2+" = "+resultado);
+                    break;
+                case 3:
+                    resultado = n1 * n2;
+                    document.write(n1+" * "+n2+" = "+resultado);
+                    break;
+                case 4:
+                    if(n2 != 0){
+                        resultado = n1 / n2;
+                        document.write(n1+" / "+n2+" = "+resultado);
+                        if (n1 % n2 != 0){
+                            let resto = n1 % n2;
+                            document.write("<br/>O resto entre "+n1+" e "+n2+" = "+resto)
+                        }
+                    }
+                    else{
+                        document.write("ERRO!");
+                    }
+                    break;
+                default:
+                    document.write("Operador inválido!");
+                    break;
+            }
+        </script>
+
+    </body>
+</html>
