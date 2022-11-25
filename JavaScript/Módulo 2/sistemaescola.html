@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Desenvolvimento 06 - JSM02</title>
+    </head>
+    <body>
+        <h2>Sistema de Notas Escolar</h2>
+        <script>
+            var nota1, nota2, nota3, media;
+            alert('INSIRA SUAS NOTAS')
+            nota1 = parseFloat(prompt("Digite a 1° nota:"));
+            nota2 = parseFloat(prompt("Digite a 2° nota:"));
+            nota3 = parseFloat(prompt("Digite a 3° nota:"));
+
+            media = (nota1 + nota2 + nota3) / 3;
+
+            media < 7.0 ? document.write('Situação: REPROVADO') : document.write('Situação: APROVADO');
+
+            
+        </script>
+    </body>
+</html>
